@@ -1,10 +1,9 @@
 def find_maximum_difference(a, b):
     # code implementation here...
-    a_max = int(max(a))
-    b_max = int(max(b))
-    a_min = int(min(a))
-    b_min = int(min(b))
-
+    a_max = max(a)
+    b_max = max(b)
+    a_min = min(a)
+    b_min = min(b)
     maximum = 0
     if a_max - b_min > b_max - a_min:
         maximum = a_max - b_min
